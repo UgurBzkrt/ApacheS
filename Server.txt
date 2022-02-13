@@ -1,0 +1,21 @@
+#! /bin/bash
+
+yum update -y
+
+yum install -y httpd
+
+yum install git -y
+
+systemctl start httpd
+
+systemctl enable httpd
+
+git clone https://github.com/example/designer
+
+cd /designer
+
+chmod -R 777 /var/www/html
+
+cp -R . /var/www/html
+
+systemctl restart httpd
