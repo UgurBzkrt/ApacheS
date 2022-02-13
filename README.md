@@ -1,6 +1,6 @@
 # ApacheS
 
-With this script, during the creation of AWS EC2 machines, we will raise the server while the machine is installing in the 'UserData' field.
+With this script, while creating AWS EC2 machines, we will install ApacheServer while installing the machine in the 'UserData' field.
 
 You can do this manually or by typing in the 'UserData' section in the CloudFormation template.
 
